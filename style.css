@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* img {
+    width: 400px;
+} */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.container{
+    width: 400px;
+    /* height: 640px; */
+    /* height: 90vh; */
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    /* overflow: hidden; */
+}
+
+.container-pantalla {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: #202020;
+    color: #fff;
+    font-size: 70px;
+}
+
+.grid-container {
+    /* border: 3px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.cero {
+    grid-column: 1 / 3;
+}
+
+input {
+    border-radius: 0;
+    border: 0.2px solid #8e8e90;
+    font-size: 40px;
+    background: #d5d6d8;
+}
+
+input:hover {
+    background: #e2e2e4;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:active {
+    background: #b4b5b6;
+    /* outline: 5px solid red; */
+}
+
+.gray-dark {
+    background: #c7c8ca;
+}
+
+.orange-1 {
+    background: #fa8e10;
+    color: #fff;
+}
+
+.orange-2 {
+    background: #f9880e;
+    color: #fff;
+}
+
+.orange-3 {
+    background: #fb8410;
+    color: #fff;
+}
+
+
+.orange-4 {
+    background: #fc8010;
+    color: #fff;
+}
+
+
+.orange-5 {
+    background: #f8790e;
+    color: #fff;
+}
+
+.orange:hover {
+    background: #ff9d2e;
+}
+
+.orange:active {
+    background: #da690e;
+}
+
+
+@media screen and (max-width: 431px) {
+
+    body{overflow-y: hidden;
+        overflow-x: scroll;}
+        
+    .container {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .container-pantalla {
+        height: 160px;
+        /* border: 1px solid red; */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 107.5px);
+        grid-template-rows: repeat(5, 107.5px);
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+
+    .container {
+        width: 100%;
+        height: 667px;
+        border: 2px solid red;
+        /* overflow: auto; */
+    }
+
+    .container-pantalla {
+        height: 192px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 95px);
+        grid-template-rows: repeat(5, 95px);
+    }
+
+}
+
+
+/* @media screen and (max-width: 360px) {
+
+    body {
+        height: 640px;
+    }
+
+    .container {
+        width: 100%;
+        height: 640px;
+    }
+
+    .container-pantalla {
+        height: 190px;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(4, 90px);
+        grid-template-rows: repeat(5, 90px);
+    }
+} */
